@@ -52,7 +52,7 @@ logger = logging.get_logger(__name__)
 
 
 def compute_default_rope_parameters(
-    config: Optional[PreTrainedConfig] = None,
+    config: Optional["PreTrainedConfig"] = None,
     device: Optional["torch.device"] = None,
     seq_len: Optional[int] = None,
 ) -> tuple["torch.Tensor", float]:
